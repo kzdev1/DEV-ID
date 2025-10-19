@@ -1,7 +1,6 @@
 body{
     overflow: hidden;
-    background: black;
-    
+    background: black;  
 }
 
 .stars{
@@ -20,12 +19,23 @@ body{
     to {background-position: -10000px 5000px;} /* movimento das estrelas */
 }
 
-.card img{
+.icon{  
     width: 350px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    border-radius: 5%;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
 }
 
+.card:hover .icon {
+  transform: translate(-8px, -8px) rotate(-6deg) scale(1.1);
+}
